@@ -1,0 +1,16 @@
+package practice1;
+
+public class Escape {
+	public static void main(String[] args) {
+		int[] nums = { 3, 4, 9 };
+		System.out.println("1桁の数字を入力してください");
+		int input = new java.util.Scanner(System.in).nextInt();
+
+		for (int value : nums) {
+			if (value == input) {
+				System.out.println("アタリ！");
+			}
+		}
+	}
+
+}
