@@ -2,15 +2,15 @@ package practice1;
 
 public class Escape {
 	public static void main(String[] args) {
-		int[] nums = { 3, 4, 9 };
-		System.out.println("1桁の数字を入力してください");
-		int input = new java.util.Scanner(System.in).nextInt();
-
-		for (int value : nums) {
-			if (value == input) {
-				System.out.println("アタリ！");
-			}
-		}
+		System.out.println("メソッドを呼び出します");
+		hello("湊");
+		hello("朝香");
+		hello("菅原");
+		System.out.println("メソッドの呼び出しが終わりました");
+	}
+	public static void hello(String name) {
+		System.out.println(name + "さん、こんにちは");
 	}
 
 }
+ 
