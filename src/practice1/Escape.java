@@ -2,18 +2,21 @@ package practice1;
 
 public class Escape {
 	public static void main(String[] args) {
-		introduceOneself();
+		double triangleArea = calcTriangleArea(10.0, 5.0);
+		System.out.println("三角形の面積：" + triangleArea + "㎠");
+		
+		double circleArea = calcCircleArea(5.0);
+		System.out.println("円の面積：" + circleArea + "㎠");
 	}
 	
-	public static void introduceOneself() {
-		String name = "Minato";
-		int age = 22;
-		double height = 169.9;
-		char zodiac ='辰';
-		System.out.println("私の名前は" + name + "です");
-		System.out.println("歳は" + age + "です");
-		System.out.println("身長は" + height + "cmです");
-		System.out.println("十二支は" + zodiac + "です");
+	public static double calcTriangleArea(double bottom, double height) {
+		double area = (bottom * height) / 2;
+		return area;
+	}
+	
+	public static double calcCircleArea(double radius) {
+		double area = radius * radius * 3.14;
+		return area;
 	}
 
 }
