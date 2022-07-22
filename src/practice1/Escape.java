@@ -2,15 +2,15 @@ package practice1;
 
 public class Escape {
 	public static void main(String[] args) {
-		double triangleArea = calcTriangleArea(10.0, 5.0);
-		System.out.println("三角形の面積：" + triangleArea + "㎠");
+		double triangleArea = calcSquareArea(10.0, 5.0);
+		System.out.println("正方形の面積：" + triangleArea + "㎠");
 		
 		double circleArea = calcCircleArea(5.0);
 		System.out.println("円の面積：" + circleArea + "㎠");
 	}
 	
-	public static double calcTriangleArea(double bottom, double height) {
-		double area = (bottom * height) / 2;
+	public static double calcSquareArea(double bottom, double height) {
+		double area = (bottom * height);
 		return area;
 	}
 	
