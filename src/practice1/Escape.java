@@ -2,13 +2,14 @@ package practice1;
 
 public class Escape {
 	public static void main(String[] args) {
-		for (int i = 1; i < 10; i++) {
-			for (int j = 1; j < 10; j++) {
-				System.out.print(i * j);
-				System.out.print(" ");
+		int[] scores = {20, 30, 40, 50, 80};
+		int count = 0;
+		for (int i = 0; i < scores.length; i++) {
+			if (scores[i] <= 50) {
+				count++;
 			}
-			System.out.println("");
 		}
+		System.out.println("50点以上の科目の数は" + count);
 	}
 
 }
