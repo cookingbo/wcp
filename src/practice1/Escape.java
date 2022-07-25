@@ -7,7 +7,7 @@ public class Escape {
 		int input = new java.util.Scanner(System.in).nextInt();
 		for (int value : numbers) {
 			if (value == input) {
-				System.out.println("アタリ！");
+				System.out.println("ハズレ！");
 			}
 		}
 	}
