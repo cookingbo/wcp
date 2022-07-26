@@ -2,13 +2,12 @@ package practice1;
 
 public class Escape {
 	public static void main(String[] args) {
-		int[] numbers = {3, 4, 9};
-		System.out.println("1桁の数字を入力してください");
-		int input = new java.util.Scanner(System.in).nextInt();
-		for (int value : numbers) {
-			if (value == input) {
-				System.out.println("ハズレ！");
-			}
+		if (x >= 60 && y >= 60) {
+		if ((x + y) >= 130) {
+		if ((x + y) >= 100 && x >= 90 || y >= 90) {
+			
+		}
+		}
 		}
 	}
 
