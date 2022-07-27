@@ -7,13 +7,13 @@ public class Escape {
 		int sushi = new java.util.Scanner(System.in).nextInt();
 		switch (sushi) {
 		case 1:
-			System.out.println("吉");
+			System.out.println("凶");
 			break;
 		case 2:
-			System.out.println("大吉");
+			System.out.println("小吉");
 			break;
 		case 3:
-			System.out.println("小吉");
+			System.out.println("大吉");
 			break;
 		}
 	}
