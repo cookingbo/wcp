@@ -1,15 +1,16 @@
 
 public class Method {
-	public static void main(String[] args) {
-		System.out.println("メソッドを呼び出します");
-		hello("湊");
-		hello("畑");
-		hello("名倉");
-		System.out.println("メソッドの呼び出しが終わりました");
+	public static void incArray(int[] array) {
+		for (int i = 0; i < array.length; i++) {
+			array[i]++;
+		}
 	}
 	
-	public static void hello(String name) {
-		System.out.println(name + "さんこんにちは");
+	public static void main(String[] args) {
+		int[] array = {1, 2, 3};
+		incArray(array);
+		for (int i : array) {
+			System.out.println(i);
+		}
 	}
-
 }
