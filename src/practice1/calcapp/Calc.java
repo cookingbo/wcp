@@ -1,7 +1,5 @@
 package practice1.calcapp;
 
-import practice1.calcapp.CalcLogic;
-
 public class Calc {
 	public static void main(String[] args) {
 		int a = 10; int b = 2;
