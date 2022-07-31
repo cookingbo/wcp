@@ -1,4 +1,5 @@
 import game.Hero;
+import game.Matango;
 
 public class GameMain {
 
@@ -14,7 +15,20 @@ public class GameMain {
 		h.slip();
 		h.sit(25);
 		h.run();
-
+		
+		Matango m1 = new Matango();
+		m1.hp = 50;
+		m1.suffix = 'A';
+		
+		Matango m2 = new Matango();
+		m2.hp = 48;
+		m2.suffix = 'B';
+		
+		// 冒険の始まり
+		h.slip();
+		m1.run();
+		m2.run();
+		h.run();
 	}
 
 }

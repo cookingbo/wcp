@@ -2,7 +2,7 @@ package game;
 
 public class Hero {
 	public String name;
-	public int hp;
+	public  int hp;
 	
 	public void sleep() {
 		this.hp = 100;
