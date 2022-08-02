@@ -3,14 +3,11 @@ package practice1;
 public class Shohei {
 
 	public static void main(String[] args) {
-		for (int i = 1; i <= 10; i++) {
-			if (i != 10) {
-				System.out.print(i + ",");
-			} else {
-				System.out.print(i);
-			}
-				
-		}
+		System.out.println(number(3, 5));
+	}
+	
+	public static int number(int sec, int thd) {
+		return (sec + thd) / 2;
 	}
 
 }
