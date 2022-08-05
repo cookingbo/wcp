@@ -1,12 +1,20 @@
 package game2;
 
+import game.Matango;
+
 public class Hero {
-	String name;
-	int hp;
-	Sword sword;
+	String name = "ミナト";
+	int hp = 100;
 	
-	public void attack() {
-		System.out.println(this.name + "は攻撃した！");
-		System.out.println("敵に5ポイントのダメージを与えた！");
+	// 戦う
+	public void attack(Matango m) {
+		System.out.println(this.name + "の攻撃！");
+		m.hp -= 5;
+		System.out.println("5ポイントのダメージを与えた！");
+	}
+	
+	// 逃げる
+	public void run() {
+		System.out.println(this.name + "は逃げ出した");
 	}
 }
