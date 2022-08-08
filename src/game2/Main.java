@@ -2,15 +2,18 @@ package game2;
 
 public class Main {
 	public static void main(String[] args) {
-		Hero h = new Hero();
-		h.name = "ミナト";
-		h.hp = 100;
-		System.out.println("勇者" + h.name + "を生み出しました！");
-		
-		h.sit(5);
-		h.slip();
-		h.sit(25);
-		h.run();
+		Hero h1 = new Hero("ミナト");
+		System.out.println(h1.hp);
+		Hero h2 = new Hero("アサカ");
+		h2.hp = 100;
+		Hero h3 = new Hero();
+		System.out.println(h3.name);
+		Wizard w = new Wizard();
+		w.name = "スガワラ";
+		w.hp = 50;
+		w.heal(h1);
+		w.heal(h2);
+		w.heal(h2);
 	}
 
 }
