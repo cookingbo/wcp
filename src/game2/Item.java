@@ -1,12 +1,13 @@
 package game2;
 
 public class Item {
-	Stirng name;
+	String name;
 	int price;
 	
 	public Item(String name) {
 		this.name = name;
 		this.price = 0;
+		System.out.println(this.name);
 	}
 	
 	public Item(String name, int price) {
