@@ -7,7 +7,7 @@ public class Item {
 	public Item(String name) {
 		this.name = name;
 		this.price = 0;
-		System.out.println(this.name);
+		System.out.println(this.name + "を入手した");
 	}
 	
 	public Item(String name, int price) {

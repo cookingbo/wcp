@@ -1,7 +1,5 @@
 package game3;
 
-import game2.Hero;
-
 public class Matango {
 	int hp = 50;
 	char suffix;
