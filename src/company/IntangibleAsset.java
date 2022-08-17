@@ -1,5 +1,6 @@
 package company;
 
-public abstract IntangibleAsset {
+public abstract class IntangibleAsset extends Asset implements Thing {
+	
 
 }
