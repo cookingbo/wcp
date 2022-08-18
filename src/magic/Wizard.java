@@ -19,7 +19,7 @@ public class Wizard {
 	public void setHp(int hp) {
 		if (hp < 0) {
 			this.hp = 0;
-		} else {
+		}else {
 			this.hp = hp;
 		}
 	}
@@ -34,6 +34,7 @@ public class Wizard {
 		}
 		this.mp = mp;
 	}
+	
 	public String getName() {
 		return this.name;
 	}
@@ -51,7 +52,7 @@ public class Wizard {
 	
 	public void setWand(Wand wand) {
 		if (wand == null) {
-			throw new IllegalArgumentException("設定されようとしている杖がnullです");
+			throw new IllegalArgumentException("設定されようとしている杖がnullです")
 		}
 		this.wand = wand;
 	}
